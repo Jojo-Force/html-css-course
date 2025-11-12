@@ -1,11 +1,9 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+* {
+}
+
+body {
   color: #444;
+  font-family: sans-serif;
 }
 
 h1,
@@ -81,4 +79,81 @@ aside {
 
 body {
   /* background-color: blue; */
+}
+
+/* li的第一个子元素 */
+li:first-child {
+  font-weight: bold;
+}
+
+/* li的最后一个子元素 */
+li:last-child {
+  font-style: italic;
+}
+
+/* li的奇数子元素 */
+li:nth-child(odd) {
+  color: red;
+}
+
+/* li的偶数子元素 */
+li:nth-child(even) {
+  color: blue;
+}
+
+/* li的第2个子元素 */
+li:nth-child(2) {
+  color: red;
+}
+
+/* article的第一个子元素为p的话
+article p:first-child {
+  color: red;
+} */
+
+/* article的最后一个子元素为p的话 */
+/* article p:last-child {
+  color: red;
+} */
+
+/* 含义href的a */
+a:link {
+  color: #1098ad;
+  /* 下划线去掉 */
+  text-decoration: none;
+}
+
+/* href不等于#的a*/
+a:visited {
+  color: #777;
+}
+
+/* a在鼠标选择时的样式*/
+a:hover {
+  color: red;
+  font-weight: bold;
+  /* 下划线样式，点线，橙色 */
+  text-decoration: underline dotted orange;
+}
+
+/* a在鼠标点击时的样式 */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
 }
