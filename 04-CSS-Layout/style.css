@@ -1,0 +1,246 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5; /*行高1.5倍字体大小*/
+  margin-bottom: 15px;
+  /* display: inline; */
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+/* footer p {
+  font-size: 16px;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  background: red;
+
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* 上下20px 左右40px*/
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-img {
+  width: 800px;
+  /* 占父元素的宽度百分比*/
+  /* width: 100%; */
+  /* 根据宽度自适应 */
+  height: auto;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* 上下50px 左右0px */
+  padding: 50px 0;
+  width: 500px;
+}
+
+body {
+  /* background-color: blue; */
+  /* margin: 0; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* 上下0 左右auto*/
+  margin: 0 auto;
+  position: relative;
+}
+
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/*h1的第一个字母*/
+/* h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+} */
+
+/*h2的第一个字母*/
+/* h2::first-letter {
+  font-style: 60px;
+  margin-right: 5px;
+} */
+
+/*p的第一句话*/
+p::first-line {
+  /* color: red; */
+}
+
+/*h3之后的相邻兄弟元素p的第一句话*/
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  /* background: orange; */
+  /*配合after定位*/
+  position: relative;
+}
+
+/*after 其实是h2的子元素*/
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  /*after默认是inline，为了可以padding，改为inline-block*/
+  display: inline-block;
+  padding: 5px 10px;
+  /*脱离文档流*/
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+.author-img {
+  float: left;
+  /*margin依然把周围的元素推开*/
+  margin-bottom: 30px;
+}
+
+.author {
+  float: left;
+  /*margin依然把周围的元素推开*/
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
