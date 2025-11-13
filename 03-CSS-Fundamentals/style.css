@@ -91,12 +91,20 @@ li:last-child {
   /* 上下20px 左右40px*/
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
   margin-bottom: 40px;
 }
 
+.post-img {
+  width: 800px;
+  /* 占父元素的宽度百分比*/
+  /* width: 100%; */
+  /* 根据宽度自适应 */
+  height: auto;
+}
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
@@ -105,6 +113,7 @@ aside {
   padding-bottom: 50px;
   /* 上下50px 左右0px */
   padding: 50px 0;
+  width: 500px;
 }
 
 body {
@@ -115,4 +124,12 @@ body {
 * {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* 上下0 左右auto*/
+  margin: 0 auto;
 }
