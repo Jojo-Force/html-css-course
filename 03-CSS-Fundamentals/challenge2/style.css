@@ -27,6 +27,7 @@ strong {
 
 a:link,
 a:visited {
+  background-color: orange;
   color: black;
 }
 
