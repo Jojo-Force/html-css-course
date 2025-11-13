@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 30px;
 }
 
@@ -148,6 +148,10 @@ a:active {
   text-decoration: underline;
 }
 
+nav {
+  text-align: center;
+}
+
 nav a:link {
   /* background-color: orangered;
   margin: 20px;
@@ -170,4 +174,47 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+/*h1的第一个字母*/
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/*h2的第一个字母*/
+h2::first-letter {
+  font-style: 60px;
+  margin-right: 5px;
+}
+
+/*p的第一句话*/
+p::first-line {
+  /* color: red; */
+}
+
+/*h3之后的相邻兄弟元素p的第一句话*/
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  background: orange;
+  /*配合after定位*/
+  position: relative;
+}
+
+/*after 其实是h2的子元素*/
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  /*after默认是inline，为了可以padding，改为inline-block*/
+  display: inline-block;
+  padding: 5px 10px;
+  /*脱离文档流*/
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }

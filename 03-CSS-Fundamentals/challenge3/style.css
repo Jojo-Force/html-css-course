@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+h2 {
+  background-color: #c7c6c6;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+}
+
+strong {
+  font-size: 28px;
+}
+
+#freeshipping {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+a:link,
+a:visited {
+  background-color: orange;
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  border-top: black solid 5px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px;
+  background-color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+body {
+}
+
+ul {
+  list-style: square;
+}
+
+h3 {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+article {
+  border: 5px solid black;
+  width: 825px;
+  margin: 50px auto;
+}
+
+ul {
+  padding-left: 50px;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+.big-box {
+  position: relative;
+}
+
+.sale-p {
+  position: absolute;
+  color: white;
+  background: red;
+  padding: 10px 20px;
+  top: -25px;
+  left: -50px;
+  text-transform: uppercase;
+  /*字母间距*/
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.c1 {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.c2 {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.c3 {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.c4 {
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.c5 {
+  background-color: greenyellow;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.c6 {
+  background-color: brown;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.c-parent {
+  margin-top: 20px;
+}
