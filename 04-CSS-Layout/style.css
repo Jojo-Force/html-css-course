@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -81,11 +87,12 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 .main-header {
   background-color: #f7f7f7;
-  background: red;
+  /* background: red; */
 
   padding: 20px;
   padding-left: 10px;
@@ -100,7 +107,7 @@ li:last-child {
 }
 
 .post-img {
-  width: 800px;
+  width: 400px;
   /* 占父元素的宽度百分比*/
   /* width: 100%; */
   /* 根据宽度自适应 */
@@ -113,7 +120,7 @@ aside {
   padding-top: 50px;
   padding-bottom: 50px;
   /* 上下50px 左右0px */
-  padding: 50px 0;
+  padding: 50px 50px;
   width: 500px;
 }
 
@@ -128,7 +135,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   /* 上下0 左右auto*/
@@ -196,7 +203,7 @@ p::first-line {
 
 /*h3之后的相邻兄弟元素p的第一句话*/
 h3 + p::first-line {
-  color: red;
+  /* color: red; */
 }
 
 h2 {
@@ -241,6 +248,22 @@ nav {
   float: right;
 }
 
-.clear {
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  float: left;
+  width: 825px;
+}
+
+aside {
+  float: right;
+  width: 300px;
+}
+
+footer {
   clear: both;
 }
