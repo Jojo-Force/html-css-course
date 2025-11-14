@@ -278,12 +278,12 @@ footer {
   justify-content: space-between;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 50px;
   align-items: flex-start;
-}
+} */
 
 .author {
   margin-bottom: 0;
@@ -318,10 +318,42 @@ footer {
   font-style: italic;
 }
 
-article {
+/* article {
   flex: 1;
 }
 aside {
   flex-basis: 300px;
   flex: 0 0 300px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+}
+
+.main-header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  margin-bottom: 0px;
+}
+
+article {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+aside {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: start;
+}
+footer {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+
+.final-p {
+  margin-bottom: 0px;
 }
