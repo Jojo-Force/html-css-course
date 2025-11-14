@@ -36,10 +36,44 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        display: none;
+        /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+        /* fr占多少份，auto和内容大小一致 */
+        /* grid-template-columns: 2fr 1fr 1fr auto; */
+
+        /* 使用repeat来重复 */
+        /* grid-template-rows: 300px 200px; */
+        /* 在grid中，margin无效，只能使用gap*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
+        /* gap: 30px; */
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+
+      .el--8 {
+        /*起始line：3 结束line：4,
+        grid-column: 3/4 可以省略为grid-column: 3
+        */
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+
+      .el--2 {
+        /* grid-column: 1/4等于grid-column: 1/span 3;*/
+        /* grid-column: 1/4; */
+
+        /* grid-column: 1/span 3； */
+        /* -1代表最后一行*/
+        /* -2代表倒数第二行*/
+        grid-column: 1/-1;
+        grid-row: 2/3;
       }
 
       .container--2 {
@@ -47,12 +81,53 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 20px;
+
+        /* 整个grid对齐方式/
+        /*整个grid在该container--2 容器中水平居中*/
+        justify-content: center;
+        /*整个grid在该container--2 容器中水平分散排列*/
+        /* justify-content: space-between; */
+
+        /*整个grid在该container--2 容器中垂直居中*/
+        align-content: center;
+
+        /*整个grid在该container--2 容器中顶部对齐*/
+        /* align-content: start; */
+
+        /*整个grid在该container--2 容器中底部对齐*/
+        /* align-content: end; */
+
+        /*整个grid在该container--2 容器中水平分散排列*/
+        /* align-content: space-between; */
+
+        /* 每个cell内部的对齐方式 */
+
+        /*内部水平顶部对齐*/
+        align-items: start;
+        /*内部水平底部对齐*/
+        align-items: end;
+        /*内部水平居中对齐*/
+        align-items: center;
+        /*内部垂直居中对齐*/
+        justify-items: center;
+      }
+
+      /*cell子元素内部实现对齐*/
+      .el--3 {
+        /*内部水平居中对齐*/
+        align-self: center;
+        /*内部垂直底部对齐*/
+        justify-self: end;
       }
     </style>
   </head>
@@ -64,7 +139,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
