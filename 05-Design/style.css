@@ -58,6 +58,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
+  border-radius: 100px;
 }
 
 .btn:hover,
@@ -73,6 +74,10 @@ h2 {
 .btn--small {
   font-size: 14px;
   padding: 8px 12px;
+}
+
+img {
+  border-radius: 12px;
 }
 /* ------------------------ */
 /* COMPONENT STYLES */
@@ -95,6 +100,8 @@ h1 {
   font-size: 42px;
   line-height: 1.1;
   letter-spacing: -1px;
+  /* 字体阴影，一般使用在图片之上的字体 */
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .header-text {
@@ -109,6 +116,10 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -126,6 +137,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -147,6 +159,20 @@ img {
 }
 
 /* CHAIRS */
+.chair img {
+  /*取消左下圆角*/
+  border-bottom-left-radius: 0;
+  /*取消右下圆角*/
+  border-bottom-right-radius: 0;
+}
+
+.chair {
+  border-radius: 12px;
+  /*左右：希望光从上而来设置为0，上下，模糊：0：取消，半径：0取消*/
+  /*配合透明度低于0.1的黑色*/
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
 .chair-box {
   padding: 24px;
 }
@@ -173,6 +199,10 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
 }
 
 .chair-price {
