@@ -52,14 +52,3 @@ body {
   font-weight: 400;
   color: #555;
 }
-
-.test {
-  /* width: 1000px; */
-  /*当屏幕小于1000px，大小跟随屏幕变大*/
-  /*当屏幕大于1000px，大小=1000px*/
-  /* max-width: 1000px; */
-  max-width: 50rem;
-  background-color: red;
-  padding: 100px;
-  font-size: 2rem;
-}
