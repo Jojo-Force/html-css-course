@@ -1,0 +1,65 @@
+/*
+
+--- 01 字体系统
+  - FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - Font weights:
+  Default：400
+
+  - Line heights:
+  Default: 1
+
+
+
+  --- 02 颜色
+  - 主色：#e67e22
+  - Tints:
+  - Shades:
+  - Accents:
+  - Greys:#555
+
+  --- 03 图片
+  去unsplash.com
+  去https://uifaces.co/找
+
+  --- 05 阴影
+
+  --- 06 圆角
+
+  --- 07 空白
+    - SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+*/ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5%*/
+  /* 使用百分比尊重用户，他们可以动态调整窗口默认的大小
+     我们的字体大小是默认大小的62.5%
+  */
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.test {
+  /* width: 1000px; */
+  /*当屏幕小于1000px，大小跟随屏幕变大*/
+  /*当屏幕大于1000px，大小=1000px*/
+  /* max-width: 1000px; */
+  max-width: 50rem;
+  background-color: red;
+  padding: 100px;
+  font-size: 2rem;
+}
