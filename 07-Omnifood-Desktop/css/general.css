@@ -23,6 +23,7 @@
   --- 02 颜色
   - 主色：#e67e22
   - Tints: #fdf2e9
+           #fae5d3
   - Shades:#cf711f
   - Accents:
   - Greys:
@@ -76,7 +77,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-cols {
@@ -89,6 +91,10 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
 
 .heading-primary,
