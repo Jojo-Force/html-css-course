@@ -24,6 +24,7 @@
   - 主色：#e67e22
   - Tints: #fdf2e9
            #fae5d3
+           #eb984e,
   - Shades:#cf711f
   - Accents:
   - Greys:
@@ -35,7 +36,7 @@
   去https://uifaces.co/找
 
   --- 05 阴影
-
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 7.5%);
   --- 06 圆角
 Default: 9px
 Medium: 11px
