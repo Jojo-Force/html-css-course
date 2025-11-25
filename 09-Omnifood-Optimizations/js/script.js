@@ -53,6 +53,33 @@ allLinks.forEach(function (link) {
   });
 });
 
+/*粘着导航栏*/
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    // console.log(ent);
+    /*scetion移出视窗时，粘着 */
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    /*scetion进入视窗时，取消粘着 */
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    //在视窗内
+    root: null,
+    threshold: 0,
+    /*还没有移出视窗，最后还剩80px时*/
+    rootMargin: "-80px",
+  }
+);
+
+obs.observe(sectionHeroEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
